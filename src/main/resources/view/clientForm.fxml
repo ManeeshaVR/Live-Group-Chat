@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="615.0" prefWidth="531.0" style="-fx-background-color: #fff8f0; -fx-border-color: #F49B9B;" stylesheets="@../style/style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.chat.controller.ClientFormController">
+   <children>
+      <TextField fx:id="txtMsg" layoutX="27.0" layoutY="546.0" onAction="#txtMsgOnActon" prefHeight="40.0" prefWidth="411.0" promptText="Enter your message" style="-fx-background-color: #f8edeb; -fx-background-radius: 5;" />
+      <JFXButton buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" layoutX="454.0" layoutY="546.0" onAction="#btnSendOnAction" prefHeight="34.0" prefWidth="50.0" style="-fx-background-color: #F486A0; -fx-background-radius: 10;">
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="37.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../img/icons8-sent-100.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="btnImoji" layoutX="359.0" layoutY="548.0" onAction="#btnImojiOnAction" prefHeight="34.0" prefWidth="26.0" text=" ">
+         <graphic>
+            <ImageView fitHeight="26.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/icons8-happy-96.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="btnPhoto" layoutX="396.0" layoutY="548.0" onAction="#btnPhotoOnAction" prefHeight="34.0" prefWidth="29.0" text=" ">
+         <graphic>
+            <ImageView fitHeight="26.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/icons8-photo-96.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <ScrollPane fx:id="scrollPane" layoutX="26.0" layoutY="42.0" prefHeight="492.0" prefWidth="482.0" style="-fx-background-color: #ffffff;">
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.9882352948188782" green="0.8352941274642944" blue="0.8078431487083435" />
+               </color>
+            </DropShadow>
+         </effect>
+         <content>
+            <VBox fx:id="vBox" prefHeight="484.0" prefWidth="475.0" />
+         </content>
+      </ScrollPane>
+      <Label fx:id="lblName" layoutX="85.0" layoutY="8.0" textFill="#b56576">
+         <font>
+            <Font name="Arial Black" size="19.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="33.0" fitWidth="33.0" layoutX="36.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/icons8-person-64.png" />
+         </image>
+      </ImageView>
+      <AnchorPane fx:id="emojiPane" layoutX="119.0" layoutY="526.0" prefHeight="112.0" prefWidth="217.0" styleClass="emoji_pane" visible="false">
+         <children>
+            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="14.0" layoutY="14.0" onMouseClicked="#grinningFaceEmojiOnAction" pickOnBounds="true">
+               <image>
+                  <Image url="@../img/emoji/grinning_face.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="53.0" layoutY="14.0" onMouseClicked="#grinningSquintingOnAction" pickOnBounds="true">
+               <image>
+                  <Image url="@../img/emoji/grinning_squinting_face.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="92.0" layoutY="14.0" onMouseClicked="#smilingFaceWithOpenHandsOnAction" pickOnBounds="true">
+               <image>
+                  <Image url="@../img/emoji/smilingfacewithopenhands.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="132.0" layoutY="14.0" onMouseClicked="#grinningFaceWithSweatOnAction" pickOnBounds="true">
+               <image>
+                  <Image url="@../img/emoji/grinning_facewithsweat.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="173.0" layoutY="14.0" onMouseClicked="#faceWithTearsOfJoyOnAction" pickOnBounds="true">
+               <image>
+                  <Image url="@../img/emoji/facewithtears_of_joy.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="14.0" layoutY="64.0" onMouseClicked="#cryingFaceOnAction" pickOnBounds="true">
+               <image>
+                  <Image url="@../img/emoji/smilingfacewithtear.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="53.0" layoutY="64.0" onMouseClicked="#sunglassesFaceOnAction" pickOnBounds="true">
+               <image>
+                  <Image url="@../img/emoji/smilingfacewithsunglasses.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="93.0" layoutY="64.0" onMouseClicked="#smilingFaceWithHeartEyesOnAction" pickOnBounds="true">
+               <image>
+                  <Image url="@../img/emoji/smilingfacewithheart-eyes.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="134.0" layoutY="64.0" onMouseClicked="#smilingFaceWithHornsOnAction" pickOnBounds="true">
+               <image>
+                  <Image url="@../img/emoji/smilingfacewithhorns.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="177.0" layoutY="64.0" onMouseClicked="#thumbsUpOnAction" pickOnBounds="true">
+               <image>
+                  <Image url="@../img/emoji/thumbsup.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,95 @@
+.scroll-pane > .viewport {
+    -fx-background-color: transparent;
+}
+
+.scroll-pane {
+    -fx-background-color: transparent;
+}
+
+.background{
+    -fx-border-color: transparent;
+}
+
+.scroll-bar:vertical{
+    -fx-background-color: transparent;
+}
+
+.scroll-bar:horizontal{
+    -fx-opacity: 0;
+    -fx-background-color: transparent;
+    -fx-background-insets: 0;
+    -fx-padding: 0
+}
+
+.scroll-bar:vertical .increment-button,
+.scroll-bar:vertical .decrement-button {
+    -fx-background-color: transparent;
+}
+
+.scroll-bar:vertical .increment-button,
+.scroll-bar:vertical .decrement-button {
+    -fx-background-color: transparent;
+}
+
+.scroll-bar:vertical .thumb{
+    -fx-background-color: transparent;
+}
+.scroll-bar:vertical .thumb:hover{
+    -fx-background-color: transparent;
+}
+
+.scroll-bar:vertical .increment-arrow,
+.scroll-bar:vertical .decrement-arrow {
+    -fx-background-color: transparent;
+}
+
+.receive-text {
+    -fx-font-size: 12;
+    -fx-fill: #d90429;
+}
+
+.receive-box {
+    -fx-background-color: #ffccd5;
+    -fx-padding: 8;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+    -fx-border-color: #ff006e;
+    -fx-border-width: 1;
+    -fx-start-margin: 11px;
+}
+
+.send-box{
+    -fx-background-color: #fde4cf;
+    -fx-padding: 8;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+    -fx-border-color: #e85d04;
+    -fx-border-width: 1;
+    -fx-start-margin: 11px;
+}
+
+.send-text{
+    -fx-font-size: 12;
+    -fx-font-weight: bold;
+    -fx-fill: #cb997e;
+}
+
+.join-text{
+    -fx-text-fill:  #57cc99;
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+}
+
+.left-text{
+    -fx-text-fill:  #e63946;
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+}
+
+.emoji_pane{
+    -fx-background-color: transparent;
+    -fx-background-radius: 10;
+    -fx-border-width: 0 0 5 0;
+    -fx-border-color:  #ffb5a7;
+    -fx-border-radius: 10;
+}

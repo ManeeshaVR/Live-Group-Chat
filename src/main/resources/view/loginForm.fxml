@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="402.0" prefWidth="602.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.chat.controller.LoginFormController">
+   <children>
+      <ImageView fitHeight="401.0" fitWidth="675.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/login.jpg" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="35.0" arcWidth="35.0" height="209.0" layoutX="363.0" layoutY="104.0" opacity="0.8" stroke="#ae1111" strokeType="INSIDE" strokeWidth="2.0" width="212.0" />
+      <ImageView fitHeight="47.0" fitWidth="47.0" layoutX="446.0" layoutY="125.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/icons8-person-100.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="txtName" layoutX="375.0" layoutY="203.0" onAction="#txtNameOnAction" prefHeight="30.0" prefWidth="187.0" promptText="User Name" style="-fx-background-color: #000000; -fx-border-color: #FFFFFF; -fx-text-fill: #ffffff; -fx-border-radius: 5;" />
+      <JFXButton fx:id="btnLogin" buttonType="RAISED" layoutX="496.0" layoutY="265.0" onAction="#btnLoginOnAction" prefHeight="30.0" prefWidth="62.0" style="-fx-border-width: 2; -fx-border-radius: 10; -fx-background-color: #000000;" text="Login" textFill="#ff0054">
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+         <font>
+            <Font name="Arial Black" size="12.0" />
+         </font></JFXButton>
+      <Label layoutX="124.0" layoutY="369.0" prefHeight="18.0" prefWidth="165.0" text="Play Tech Pvt Ltd" textFill="#000000b2">
+         <font>
+            <Font name="Century Schoolbook" size="14.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="76.0" fitWidth="29.0" layoutX="80.0" layoutY="364.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/Screenshot%20(160).png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
